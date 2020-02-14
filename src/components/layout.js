@@ -1,4 +1,7 @@
 import React from 'react'
+import '../styles/main.scss'
+import '../styles/bootstrap-grid.css'
+
 import Header from './header'
 import Hero from './hero'
 import About from './about'
@@ -16,7 +19,7 @@ const Layout = () => {
             <Skills />
             <Projects />
             <Video />
-            <footer />
+            <Footer />
         </div>
     )
 }
