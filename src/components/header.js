@@ -2,8 +2,9 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 const Header = () => {
+
     return (
-        <header>
+        <header className="hd">
             <div className="container">
                 <nav>
                     <ul>

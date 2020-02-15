@@ -1,0 +1,15 @@
+.heroSection {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+
+  .helloText,
+  .hello {
+    @include heroContent;
+
+    @media (min-width: 992px) {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+  }
+}

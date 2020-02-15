@@ -1,5 +1,7 @@
 header {
-    padding: .2rem 0;
+  position: fixed;
+  padding: 0.2rem 0;
+  width: 100%;
 
   ul {
     display: flex;
@@ -16,7 +18,7 @@ header {
         text-transform: uppercase;
 
         &:hover {
-            color: darken($primaryColor, 30%);
+          color: darken($primaryColor, 30%);
         }
       }
     }
