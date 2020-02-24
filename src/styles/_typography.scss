@@ -1,3 +1,43 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
 // font-family: 'Rubik', sans-serif;
 
+@mixin headerWraper {
+  text-align: left;
+  @media (min-width: 768px) {
+    text-align: right;
+    padding-right: 3rem;
+  }
+}
+
+@mixin sectionHeader($color: $secondaryColor) {
+  color: $color;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+
+}
+
+@mixin primaryText {
+    font-size: 1rem;
+    color: $primaryColor;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    letter-spacing: 1px;
+
+}
+
+.header-wraper {
+  @include headerWraper;
+}
+
+.section-header {
+  @include sectionHeader;
+
+}
+
+.primary-text {
+    @include primaryText;
+
+}

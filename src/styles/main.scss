@@ -1,7 +1,7 @@
-@import './variables';
-@import './general';
-@import './typography';
-@import './mixins';
-@import './header';
-@import './hero';
+@import './variables.scss';
+@import './general.scss';
+@import './_typography.scss';
+@import './header.scss';
+@import './hero.scss';
+@import './about.scss';
 

@@ -1,7 +1,18 @@
+@mixin heroContent {
+    color: $primaryColor;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    
+}
+
+
 .heroSection {
   display: flex;
   align-items: center;
   height: 100vh;
+  margin-bottom: 200px;
 
   .helloText,
   .hello {
