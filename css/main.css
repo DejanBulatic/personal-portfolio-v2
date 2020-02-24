@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+html {
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+}
+
+html ul {
+  list-style: none;
+}
+
+html a {
+  text-decoration: none;
+}
+
+html img {
+  max-width: 100%;
+}
+
+header {
+  position: fixed;
+  padding: 0.2rem 0;
+  width: 100%;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header ul li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+header ul li a {
+  color: #305a75;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+header ul li a:hover {
+  color: #030709;
+}
+
+.heroSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.heroSection .helloText,
+.heroSection .hello {
+  color: #305a75;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.heroSection .helloText .waveHand,
+.heroSection .hello .waveHand {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.heroSection .helloText .waveHand:hover,
+.heroSection .hello .waveHand:hover {
+  -webkit-animation-name: wave-animation-hover;
+          animation-name: wave-animation-hover;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-transform-origin: 70% 70%;
+          transform-origin: 70% 70%;
+}
+
+@-webkit-keyframes wave-animation-hover {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  20% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  30% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  40% {
+    -webkit-transform: rotate(9deg);
+            transform: rotate(9deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes wave-animation-hover {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  20% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  30% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  40% {
+    -webkit-transform: rotate(9deg);
+            transform: rotate(9deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@media (min-width: 992px) {
+  .heroSection .helloText,
+  .heroSection .hello {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.heroSection .heroImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.heroSection .heroImage figure {
+  max-width: 300px;
+}
+
+.heroSection .heroImage figure img {
+  border: 16px solid #305a75;
+  border-radius: 50%;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+/*# sourceMappingURL=main.css.map */

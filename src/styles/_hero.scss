@@ -7,9 +7,65 @@
   .hello {
     @include heroContent;
 
+    .waveHand {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      margin-left: 10px;
+
+      &:hover {
+        animation-name: wave-animation-hover;
+        animation-duration: 2.5s;
+        animation-iteration-count: 1;
+        animation-delay: 0s;
+        transform-origin: 70% 70%;
+      }
+
+      //Wawing hand on hover
+      @keyframes wave-animation-hover {
+        0% {
+          transform: rotate(0deg);
+        }
+        10% {
+          transform: rotate(-10deg);
+        }
+        20% {
+          transform: rotate(12deg);
+        }
+        30% {
+          transform: rotate(-10deg);
+        }
+        40% {
+          transform: rotate(9deg);
+        }
+        50% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    }
+
     @media (min-width: 992px) {
       font-size: 2.5rem;
       margin-bottom: 3rem;
+    }
+  }
+
+  .heroImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    figure {
+      max-width: 300px;
+
+      img {
+        border: 16px solid $primaryColor;
+        border-radius: 50%;
+        transition: 0.2s linear;
+      }
     }
   }
 }
